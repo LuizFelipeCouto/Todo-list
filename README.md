@@ -70,4 +70,4 @@ Este projeto foi feito com foco em aprendizado. O objetivo é entender como inte
 
 Captura de tela
 
-<img src="https://github.com/LuizFelipeCouto/Todo-list/blob/main/app%20image.png" width="300px" height="300px"/>
+![preview](https://raw.githubusercontent.com/LuizFelipeCouto/Todo-list/main/app%20image.png)
