@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>To-Do List</h1>
+      </header>
+      <main>
+        <!-- Formulário para adicionar uma nova tarefa -->
+        <form class="add-task-form">
+          <input
+            type="text"
+            name="title"
+            placeholder="Enter a task..."
+            required
+          />
+          <button type="submit" class="add-button">To add</button>
+        </form>
+
+        <!-- Lista de tarefas existentes -->
+        <ul class="task-list">
+          {% for task in tasks %}
+          <li class="task-item" data-id="{{ task['id'] }}">
+            <div class="task-content">
+              <span class="task-title" contenteditable="false"
+                >{{ task['title'] }}</span
+              >
+            </div>
+            <div class="task-actions">
+              <button class="delete-button" data-id="{{ task['id'] }}">
+                X
+              </button>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </main>
+    </div>
+
+    <!-- Script JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
