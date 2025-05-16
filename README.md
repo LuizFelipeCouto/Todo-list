@@ -68,4 +68,5 @@ Você também pode testar as rotas da API usando o [Postman](https://www.postman
 
 Este projeto foi feito com foco em aprendizado. O objetivo é entender como integrar uma API com um front-end básico, organizando as responsabilidades entre o servidor e o cliente de forma clara e modular.
 
-```
+Captura de tela
+<img src="https://github.com/LuizFelipeCouto/Todo-list/blob/main/app%20image.png" width="300px" height="300px"/>
